@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe PagesController do
+
   render_views
 
   # Run Before Tests #
@@ -9,10 +10,6 @@ describe PagesController do
     
     @base_title = "Ruby on Rails Tutorial Sample App"
   end
-
-
-
-
 
   # Home Page Tests #
 
@@ -69,6 +66,4 @@ describe PagesController do
       get 'help'
       response.should have_selector("title", :content => @base_title + " | Help")
     end
-
-
 end
