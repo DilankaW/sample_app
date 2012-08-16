@@ -7,7 +7,9 @@
   </head>
   <body>
     <div class="container">
-      <%= render 'layouts/header' %>
+	
+      	<%= render 'layouts/header' %>
+		
       <section class="round">
         <%= yield %>
       </section>
@@ -15,7 +17,7 @@
 
 <div class="container">
       <%= render 'layouts/footer' %>
-     
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
